@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/user.css" />
+    <link rel="stylesheet" href="css/tema.css" />
+    <link rel="stylesheet" href="css/menuLateral.css" />
+    <link rel="stylesheet" href="css/horaData.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body class="temaPrincipal">
+    <header>
+      <nav class="menu temaDestaques">
+        <div class="divMenu">
+          <button class="menuButton">
+            <i class="fa fa-bars iconeTema" aria-hidden="true"></i>
+          </button>
+        </div>
+
+        <div class="divHoraData">
+          <div class="hora"><p class="iconeTema">Hora</p></div>
+          <div class="data"><p class="iconeTema">data</p></div>
+        </div>
+
+        <div class="divUser">
+          <h2 class="nomeMenuUser">Usuário</h2>
+          <button class="user"></button>
+        </div>
+      </nav>
+
+      <div class="areaLog">
+        <img src="img/log.png" alt="" />
+        <h1 class="titleLog colorTema">TASKS</h1>
+      </div>
+    </header>
+
+    <nav class="menuLateral temaDestaques">
+      <div class="mensagemMenuLateral">
+        <div>
+          <p>
+            ÁREA RESTRITA,Apenas usuários cadastrados poderão utilizar o
+            menu,casdastre-se, é gratuito
+          </p>
+          <button>Quero mim Cadastrar</button>
+        </div>
+      </div>
+      <div class="divButtonLateral">
+        <button class="buttonFechaMenuLateral iconeTema">
+          <i class="fa fa-arrow-left" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <ul>
+        <li>
+          <i class="fa fa-share iconeTema" aria-hidden="true"></i
+          ><a class="item colorTema" href="#" onclick="share()">Compartilhar</a>
+        </li>
+
+        <li class="buttonHora">
+          <i class="fa fa-clock-o iconeTema" aria-hidden="true"></i>
+          <a class="item colorTema" href="#">Hora</a
+          ><span
+            ><i class="fa fa-adjust ligarHora" aria-hidden="true"></i
+          ></span>
+        </li>
+
+        <li class="buttonData">
+          <i class="fa fa-calendar-o iconeTema" aria-hidden="true"></i>
+          <a class="item colorTema" href="#">Data</a
+          ><span
+            ><i class="fa fa-adjust ligarData" aria-hidden="true"></i
+          ></span>
+        </li>
+
+        <li>
+          <i class="fa fa-adjust iconeTema" aria-hidden="true"></i
+          ><a class="item colorTema" href="#">Tema</a>
+        </li>
+      </ul>
+      <div class="areaTema">
+        <img class="white" src="img/tema (1).png" alt="" />
+        <img class="black" src="img/tema (2).png" alt="" />
+        <img class="blue" src="img/tema (3).png" alt="" />
+        <img class="margenta" src="img/tema (4).png" alt="" />
+      </div>
+    </nav>
+
+    <div class="areaUser temaDestaques">
+      <button class="fechaPerfil"></button>
+
+      <div class="containerUser">
+        <section class="sectionUser">
+          <div class="inforUser">
+            <div>
+              <img src="img/User01.png" alt="" class="imgUser" /><span
+                class="TrocaFoto"
+                ><i class="fa fa-camera" aria-hidden="true"></i
+              ></span>
+            </div>
+            <input
+              type="file"
+              style="display: none"
+              class="ButtonImgUser"
+              name="ButtonImgUser"
+              accept="image/*"
+            />
+            <h3 class="nomePerfil">Name User</h3>
+            <hr />
+            <p class="emailPerfil">E-mail User</p>
+          </div>
+
+          <div class="historicoUser">
+            <section>
+              <div class="graficoUnico">
+                <h3>Gráfico de Atividades</h3>
+                <hr />
+                <p class="titleP">
+                  <span>Agendados</span><span class="totalAg">0</span>
+                </p>
+                <p class="barraP"><span class="progressAg"></span></p>
+                <p class="titleP">
+                  <span>Deletados</span><span class="totalDe">0</span>
+                </p>
+                <p class="barraP"><span class="progressDe"></span></p>
+              </div>
+            </section>
+
+            <section>
+              <div class="divTotal">
+                <h3 class="titleTotal">Gráfico total</h3>
+                <svg>
+                  <circle cx="70" cy="70" r="70"></circle>
+                  <circle
+                    class="circleProgressT"
+                    cx="70"
+                    cy="70"
+                    r="70"
+                  ></circle>
+                </svg>
+                <span class="number">
+                  <p class="progressTotal"></p>
+                </span>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="sectionFormUser">
+          <h2>Cadastrar Usuário</h2>
+          <hr />
+          <div class="containerFormUser">
+            <form action="" class="formUser">
+              <h2>Cadastrar</h2>
+              <hr />
+              <div>
+                <input type="text" id="inputNome" required />
+                <label for="inputNome" id="labelNome">Nome</label>
+              </div>
+
+              <div>
+                <input type="text" id="inputEmail" required />
+                <label for="inputEmail" id="labelEmail">E-mail</label>
+              </div>
+
+              <div>
+                <input type="password" id="inputSenha" required />
+                <i class="fa fa-eye-slash" id="verSenha" aria-hidden="true"></i>
+                <label for="inputSenha" id="labelSenha">Senha</label>
+              </div>
+
+              <div>
+                <input type="password" id="inputConfSenha" required />
+                <i
+                  class="fa fa-eye-slash"
+                  id="verConfSenha"
+                  aria-hidden="true"
+                ></i>
+                <label for="inputConfSenha" id="labelConfSenha">Confirme</label>
+              </div>
+
+              <button>Cadastrar</button>
+            </form>
+
+            <div class="imgFormUser"></div>
+          </div>
+          <section class="sectionOb">
+            <h4>Observações</h4>
+            <hr />
+            <div>
+              <p>
+                Obs: Olá, eu sou o Pedro criador da plataforma, passei aqui para
+                avisar que todos os usuários cadastrados na nossa plataforma
+                terão benefícios extras, <span>Cadastre-se e aproveite</span>
+              </p>
+            </div>
+          </section>
+        </section>
+
+        <div class="excluirUser">
+          <h3>Zona de perigo</h3>
+          <p>Ações irreversíveis e destrutivas. Pise levemente</p>
+          <div class="temaGrafico">
+            <h3>Tem certeza?</h3>
+            <hr />
+            <p>Depois de excluir sua Conta, não há como voltar atrás.</p>
+            <button class="excluirConta">Excluir Conta</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <form class="formAgendar" action="">
+        <input
+          type="text"
+          name="inputTitle"
+          placeholder="titulo"
+          class="colorTema"
+        />
+        <input
+          type="text"
+          placeholder="descrição"
+          name="inputDes"
+          class="colorTema"
+        />
+        <input type="date" name="inputDate" class="colorTema" />
+        <input type="time" name="inputHrs" class="colorTema" />
+        <button class="buttonAgendar temaButtonAgendar">Agendar</button>
+      </form>
+
+      <section class="consultas">
+        <ul>
+          <li class="abaAgendados colorTema">Agendados</li>
+          <li class="abaSobre apas_consultas colorTema">Sobre</li>
+        </ul>
+      </section>
+
+      <div class="meusAgendamentos temaDestaques">
+        <section class="agendados">
+          <div class="barraDeTarefas">
+            <p>Titulo</p>
+            <p>Descrição</p>
+            <p>Data</p>
+            <p>hora</p>
+            <button class="configuracao iconeTema">
+              <i class="fa fa-cog" aria-hidden="true"></i>
+            </button>
+          </div>
+        </section>
+
+        <section class="Sobre">
+          <div class="areaLog">
+            <img src="img/log.png" alt="" />
+            <h1 class="titleLog colorTema">TASKS</h1>
+          </div>
+
+          <div class="contSobre">
+            <p>
+              <i class="fa fa-paperclip iconeTema" aria-hidden="true"></i
+              >Tasks(Tarefas) é uma plataforma para auxiliar as pessoas que
+              estão sempre querendo organizar suas tarefas diárias, com vários
+              recursos para trazer maior facilidade em agendar suas tarefas de
+              forma prática e rápida, aqui você pode agendar, deletar, ter seu
+              perfil de usúario, com varios benefícios, como histórico de
+              Atividades, hora e data, temas de sua preferências e muito mais.
+              <i class="fa fa-paperclip iconeTema" aria-hidden="true"></i>
+            </p>
+            <img src="img/img-Sobre.png" class="imgSobre" alt="" />
+          </div>
+        </section>
+      </div>
+
+      <footer>
+        <p class="colorTema">Todos os direitos recervados por Pedro Ronaldo</p>
+        <section>
+          <a href="" class="iconeTema"><i class="fa fa-github" aria-hidden="true"></i></a>
+          <a href="" class="iconeTema"><i class="fa fa-tasks" aria-hidden="true"></i></a>
+          <a href="" class="iconeTema"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+
+        </section>
+      </footer>
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/user.js"></script>
+    <script src="js/menuLateral.js"></script>
+    <script src="js/tema.js"></script>
+  </body>
+</html>

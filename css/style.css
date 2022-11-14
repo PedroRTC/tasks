@@ -1,0 +1,528 @@
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Questrial", sans-serif;
+}
+
+.areaLog {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.areaLog img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: -10px;
+}
+
+.titleLog {
+  font-family: "Shadows Into Light", cursive;
+  letter-spacing: 1px;
+  font-size: 16pt;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+header {
+  margin-top: 70px;
+  height: 50px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: ghostwhite;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 7px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  gap: 20px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.238);
+}
+
+.divMenu {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 50%;
+}
+
+.menuButton {
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  margin-left: 20px;
+  background-color: transparent;
+}
+
+.menuButton i {
+  transform: scale(1.7);
+}
+
+.menuButton img {
+  transform: scale(10.5);
+}
+
+.divUser {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 50%;
+  gap: 10px;
+}
+
+.user {
+  width: 40px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  background-image: url("../img/User01.png");
+  background-size: cover;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.nomeMenuUser {
+  font-size: 10pt;
+  letter-spacing: 1px;
+}
+
+.title_principal {
+  margin: auto;
+  text-align: center;
+}
+
+.formAgendar {
+  margin: auto;
+  text-align: center;
+  margin: 40px 0px;
+}
+
+.formAgendar input {
+  outline: none;
+  padding: 10px;
+  margin: 1%;
+  border: none;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.238);
+  background-color: rgba(255, 255, 255, 0.227);
+}
+
+.formAgendar input[type="time"] {
+  padding: 7.5px 1%;
+  width: 100px;
+}
+
+.formAgendar input[type="date"] {
+  padding: 8.5px 1%;
+  width: 100px;
+}
+
+.formAgendar button {
+  width:100px ;
+   height: 35px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s;
+  font-family: "Raleway", sans-serif;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.353);
+}
+
+.consultas {
+  width: 100%;
+  text-align: center;
+}
+
+.consultas ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  list-style: none;
+}
+
+.consultas li {
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+  font-family: "Raleway", sans-serif;
+}
+
+.meusAgendamentos {
+  margin: auto;
+  display: flex;
+  align-items:center;
+  width: 90%;
+  overflow: hidden;
+  transition: all 0.5s;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.meusAgendamentos section {
+  margin: auto;
+  width: 100%;
+  height: 300px;
+  flex: none;
+  padding: 20px 0px;
+  overflow-y: auto;
+  scroll-snap-align: start;
+}
+
+.meusAgendamentos section::-webkit-scrollbar{
+  width:5px;
+  background-color: white;
+}
+
+
+  
+
+
+.Sobre{
+  margin: auto;
+  
+}
+
+.contSobre{
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+.imgSobre{
+  width: 300px;
+  height: 250px;
+
+}
+
+.contSobre p{
+  margin: auto;
+  width: 80%;
+  letter-spacing: 1px;
+  line-height: 25px;
+}
+
+.contSobre i{
+  transform: scale(1.7);
+  margin:0px 10px;
+}
+
+.barraDeTarefas {
+  display: flex;
+  text-align: center;
+  gap: 10px;
+  padding: 15px 5px;
+  width: 90%;
+  margin: auto;
+  cursor: pointer;
+}
+
+.barraDeTarefas p {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11pt;
+  letter-spacing: 1px;
+  font-family: "Raleway", sans-serif;
+}
+
+.configuracao {
+  width: 20%;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.configuracao i {
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1.4);
+  transition: all 2s;
+}
+
+.configuracao i:hover {
+  transform: rotateZ(180deg) scale(1.4);
+}
+
+.divConf {
+  margin: auto;
+  text-align: left;
+  background-color: white;
+  position: absolute;
+  transform: translateY(-90px) translateX(-100px);
+  width: 120px;
+  padding-bottom: 10px;
+  border-radius: 3px;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.238);
+}
+
+.divConf::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  margin-left: 89%;
+  margin-top: 53%;
+  background-color: white;
+  transform: rotateZ(45deg);
+}
+
+.divConf span {
+  text-align: center;
+  display: inline-block;
+  font-size: 10pt;
+  padding: 7px 0px;
+  color: black;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+}
+
+.divConf span:hover {
+  background-color: gainsboro;
+}
+
+.tarefas {
+  display: flex;
+  text-align: center;
+  gap: 10px;
+  padding: 15px 5px;
+  width: 90%;
+  margin: auto;
+  cursor: pointer;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.238);
+  background-color: rgba(255, 255, 255, 0.078);
+  margin-bottom: 20px;
+}
+
+.tarefas p {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  font-size: 11pt;
+  border-right: 1px solid gainsboro;
+  overflow: auto;
+}
+
+.tarefas p::-webkit-scrollbar {
+  background-color: transparent;
+}
+
+.buttonDelete {
+  width: 20%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+
+.buttonDelete:hover {
+  animation: deleAnimar linear 1s;
+}
+
+@keyframes deleAnimar {
+  0% {
+    transform: rotateZ(20deg);
+  }
+  50% {
+    transform: rotateZ(-20deg);
+  }
+
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+.buttonDelete i {
+  transform: scale(1.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divMensagem {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.664);
+  z-index: 2;
+}
+
+dialog {
+  margin: auto;
+  width: 250px;
+  border: none;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: ghostwhite;
+  transform: scale(0);
+  transition: all 0.5s;
+}
+
+dialog p {
+  font-size: 12pt;
+  letter-spacing: 1px;
+  padding: 10px 0px;
+  margin-bottom: 30px;
+}
+
+dialog section {
+  display: flex;
+  gap: 20px;
+}
+
+dialog button {
+  width: 100%;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 1px;
+  font-family: "Raleway", sans-serif;
+  transition: all 0.3s;
+}
+
+.buttonMensagemCancelar {
+  background-color: transparent;
+  border: 1px solid black;
+}
+
+.buttonMensagemCancelar:hover {
+  background-color: gainsboro;
+}
+
+.buttonMensagemDelete {
+  background-color: rgb(255, 100, 100);
+  color: white;
+}
+
+.buttonMensagemDelete:hover {
+  background-color: red;
+}
+
+footer{
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 90%;
+  padding:20px 0px ;
+  border-bottom: 1px solid rgba(220, 220, 220, 0.344);
+}
+
+footer p{
+  font-size: 10pt;
+  letter-spacing: 1px;
+  opacity:0.5 ;
+}
+
+footer section{
+  margin-top: 20px;
+}
+
+footer a{
+  text-decoration: none;
+  margin: 0px 10px;
+ 
+}
+footer i{
+  transform: scale(1.3);
+  transition: all 0.5s;
+}
+
+footer i:hover{
+  transform: scale(1.5);
+}
+
+@media screen and (max-width: 820px) {
+  .meusAgendamentos {
+    width: 100%;
+  }
+
+  .barraDeTarefas {
+    width: 95%;
+    gap: 25px;
+  }
+
+  .barraDeTarefas p {
+    font-size: 12px;
+  }
+
+  .tarefas {
+    width: 95%;
+  }
+
+  .tarefas p {
+    font-size: 10px;
+  }
+
+  .formAgendar input {
+    padding: 10px;
+    width: 90%;
+  }
+
+  .formAgendar input[type="time"],
+  .formAgendar input[type="date"] {
+    width:90%;
+    padding: 10px;
+  }
+
+  .formAgendar button {
+    margin: 10px 0px;
+    padding:10px;
+    width: 93%;
+  }
+
+  .contSobre{
+    margin: auto;
+    display:block;
+  }
+
+  .contSobre p{
+    font-size: 10pt;
+    width: 100%;
+  }
+
+  
+
+  
+}
+
+
+@media screen and (max-width: 400px) {
+  .formAgendar button {
+    margin: 10px 0px;
+    padding:10px;
+    width: 96%;
+  }
+}

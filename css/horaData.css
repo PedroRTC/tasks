@@ -1,0 +1,47 @@
+
+
+.divHoraData{
+    width: 100;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+    gap: 20px;
+  }
+  
+  .divHoraData div{
+    background-color: rgba(255, 255, 255, 0.078);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.238);
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid gray;
+  
+  }
+
+ 
+  
+  .hora{
+    display: none;
+  }
+
+  .data{
+    display: none;
+  }
+
+  .ligarHora{
+    transition: all 0.5s;
+    opacity: 0.5;
+   
+  }
+
+  .ligarData{
+    transition: all 0.5s;
+    opacity: 0.5;
+   
+  }
+
+  @media screen and (max-width: 820px){
+    .divHoraData{
+      gap: 10px;
+      font-size: 10pt;
+    }
+  }
