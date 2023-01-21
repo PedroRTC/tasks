@@ -3,6 +3,9 @@
 
 * Link do projeto na web: [tasks](https://ag-tarefa.netlify.app/)
 
+![img-github-03](https://user-images.githubusercontent.com/110836621/213879216-129888f7-55ca-4dec-925c-ddb4d629cc3e.png)
+
+
 * Tecnologias Utilizadas
 
 [![html](https://user-images.githubusercontent.com/110836621/190482986-2a2e37aa-8cb4-4b0f-bf8f-68a75d0dd04c.png)
